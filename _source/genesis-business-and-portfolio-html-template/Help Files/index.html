@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .style1 {color: #0000FF}
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Genesis&rdquo; Documentation by &ldquo;TemplateSquare&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Genesis&rdquo;</h1>
+		
+  <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+			    <strong>
+					Created: 01/14/2011<br>
+				By: <a href="http://themeforest.net/user/templatesquare">TemplateSquare</a><br>
+				<br>
+			    </strong><strong><br>
+		        </strong> </p>
+    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/templatesquare">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<li><a href="#php">PHP Code Explanation</a> <em class="quiet small">(If your theme uses PHP)</em></li>
+			<li><a href="#">Flash</a>  <em class="quiet small">(If your theme uses Flash)</em></li>
+			<li><a href="#">API Usage</a> <em class="quiet small">(If your theme uses an API)</em></li>
+			<li><a href="#">Any additional unique features that need an overview</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This template is fixed layout with two columns. This is simple template and the html are commented well so you can easily make an update. 
+		<p><strong>HERE IS THE HTML STRUCTURE:
+        </strong>
+<p><span class="added1">-- LOGO AND NAVIGATION --</span><br />
+  <br />
+  <span class="style1">Logo is nested within a div with an id of &quot;logo&quot;.<br />
+  <br />
+The top navigation (main menu) is nested within a ul with an id of &quot;menu&quot;. <br />
+  </span><br />
+  <span class="added1">-- HOME PAGE SLIDER --</span><br />
+  <br />
+  <span class="style1">The slider area is nested within a div with an id of &quot;slider&quot;. <br />
+  <br /> 
+  you can add new img within div with an id of &quot;slider&quot; to add new slider.</span>
+  <br>
+  <br>
+  <span class="added1">-- HOME PAGE CONTENT AREA --</span><br>
+  <span class="style1"><br>
+  Home page content area is single column.<br>
+  <br>
+  The intro text in the home page is nested within a div with a class of &quot;middle-text&quot;.<br>
+  <br>
+  The four column information in the home page is nested within an ul with a class of &quot;four_column</span>&quot;.<br>
+  <br>
+<p><span class="added1">-- INNER PAGE CONTENT AREA --</span> <br />
+    <span class="style1"> <br />
+    The content area is divide by two column, in the left side is the main content area which is nested within a div with an id of &quot;content&quot; and the right side is the right sidebar area which is nested within a div with an id of &quot;sideright&quot;. <br>
+    <br>
+    Each sidebar item in the right side is nested within an li with class of &quot;widget-container&quot;.<br>
+    <br>
+    The content text under the &quot;content&quot; div is nested within a h1 tag with a class of &quot;pagetitle&quot;(for header) and p tag.</span><span class="style1"><br>
+    <br>
+    <strong>Pages -&gt; Default page:</strong><br>
+    <br>
+    The four people information is nested within an ul with a class of &quot;display-inline-block&quot;.</span>
+<p><span class="style1">The four square with text &quot;Client **.&quot; are nested within an ul with a class of &quot;display-inline&quot;.<br>
+    <br>
+    <br>
+    <strong>Blog page:</strong><br>
+    <br>
+    In the blog page, each blog post is nested within a div with a class of &quot;post&quot;. You can add or change the content under this class and you can add new blog post item by adding new div with a class of &quot;post&quot; under the latest div.<br />
+    <br>
+    <span class="added1">-- BLOG DETAIL PAGE --</span></span><span class="style1"><br>
+  Blog detail content is nested within a div with an id of &quot;singlepost&quot;.</span><br />
+	<br />
+<span class="style1">About the author is nested within a div with an id of &quot;authorbox&quot;. and related post is nested within a div with an id of &quot;relatedbox&quot;.</span><br/><br/>
+<span class="style1">Related Post is nested within a div with an id of &quot;relatedbox&quot;. And Comments is nested within a div with an id of &quot;comment&quot;</span><br>
+    <br>
+    <span class="added1">--SLIDER PAGE --</span>
+<p class="style1">Slider Comments in this page is nested within a div with a class of &quot;ts-thinkboxslider&quot;.<br>
+  <br>
+  Slider image in this page is nested within a div with an id of &quot;slider-small&quot;.
+<p><span class="added1">-- JQUERY TAB PAGE --</span>
+<p class="style1">Tabbing in this page is nested within a div with a class of &quot;tabcontainer&quot;. and the tab itself is nested within an ul with a class &quot;tabs&quot;. For the tab body, you can take a look at div with an id &quot;tab-body&quot;
+<p><span class="added1">-- PORTFOLIO PAGE --</span><br>
+    <br>
+    <span class="style1">Portfolio page content area is a single single column and it nested within a div with an id of &quot;content&quot;.<br>
+    <br>
+    The portfolio area is nested within an ul with id of &quot;ts-display-pf-col-1&quot; for portfolio1, &quot;ts-display-pf-col-2&quot; for portfolio2, &quot;ts-display-pf-col-3&quot; for portfolio3 and &quot;ts-display-pf-col-4&quot; for portfolio4.<br>
+    <br>
+  And each portfolio item</span> is nested within a li with a class name of its category, you can add an additional li tag to add more portfolio items.</span>
+<p><span class="style1">Filter above portfolio is nested within div with id &quot;filter&quot;. Each filter is nested in li.</span><span class="style1"><br />
+    </span><span class="style1"><br>
+    <span class="added1">-- CONTACT PAGE --</span><br />
+    <br>
+    Contact page is divide by two column with googlemaps iframe on the sidebar.<br>
+    <br>
+    The contact form is nested within a div with an id &quot;contactform&quot;.<br>
+    <br />
+    </span><span class="added1">-- FOOTER AREA --</span><br />
+    <span class="style1"><br />
+    The five column area on the bottom is nested within a div with a class of &quot;one_fifth&quot;.<br>
+    <br>
+    The footer area is nested within a div with an id of &quot;footer&quot; </span>.
+<p>
+<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+	  <p>These are the css files:<br>
+	    1) style.css (used for all pages, this is the general css file)<br />
+	    2) inner.css	  <br>
+	  3) prettyPhoto.css<br>
+      4) nivo-slider.css      </p>
+	  <p>===========================================</p>
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited. <br>
+		</p>
+		<p>1) style.css structure</p>
+<p><span class="added">/*** GLOBAL  ***/</span><br>
+		  <br>
+		  <span class="style1">This is the global css for html, body, etc tags. Keep in mind, that these values might be overridden somewhere else in the file.</span><br>
+		  <br>
+	      <span class="added">/*** END OF GLOBAL  ***/</span><br>
+	  <br>
+	  <span class="added">/*** DEFAULT ELEMENT STYLES ***/</span><br>
+	  <br>
+	  <span class="style1">This section contains some general styling, such as anchor tag colors, headings, list, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</span><br>
+	  <br>
+	  <span class="added">/*** END OF DEFAULT ELEMENT STYLES ***/</span><br>
+	  <br>
+	  <span class="added">/*** CONTAINER ***/</span><br>
+	  <br>
+	  <span class="style1">This is the main background of each page. You can change the main background image and color by change the styles in this section. </span><br>
+	  <br>
+	  <span class="added">/*** END OF CONTAINER ***/</span><br>
+	  <br>
+	  <span class="added">/*** TOP ***/</span><br>
+	  <br>
+	  <span class="style1">This section contains the styling for logo and top menu. </span><br>
+	  <br>
+	  <span class="added">/*** END TOP ***/</span><br>
+	  <br>
+	  <span class="added">/*** CONTENT ***/</span><br>
+	  <br>
+	  <span class="style1">This is the styling for all pages content area, divide the sidebar (right side) and main content(left side).<br>
+	  <br>
+	  The content images style is also setup here:	  </span><span class="style1"><pre>	.imgleft{ float:left; padding-right:15px; }<br>	 .imgright{ float:right; padding-left:15px; }</pre>
+	  </span>
+	  <p><span class="style1">      The right side sidebar styling also setup here. </span><br>
+	    <br>
+	    <span class="added">/*** END OF CONTENT ***/</span><br>
+	    <br>
+	    <span class="added">/*** FOOTER ***/</span><br>
+	    <br>
+	    <span class="style1">This section contains the styling for footer area. </span><br>
+	    <br>
+      <span class="added">/*** END OF FOOTER ***/</span></p>
+	  <p>2)inner.css </p>
+	  <p><span class="style1">The css is used for styling the inner page. </span></p>
+	  <p>3)prettyPhoto.css </p>
+	  <p><span class="style1">The css is used for styling the prettyPhoto lightbox. </span></p>
+	  <p>&nbsp;</p>
+	  <hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme use these Javascript files:</p>
+		
+		<ol>
+		  <li>jQuery<br>
+		    jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+		    <pre>jquery-1.4.2.js<br />easySlider1.7.js
+cufon-yui.js<br>contact.js<br>DD_belatedPNG.js<br>DD_roundies_0.0.2a-min.js<br>fade.js<br>filter.js<br>GeosansLight_500.font.js
+ie_rounded_config.js<br>init.js<br>
+jquery.cycle.all.min.js
+jquery.prettyPhoto.js
+jquery.lavalamp.js<br>jquery.easing.1.1.js<br>jquery.imgr.min.js<br>
+
+jquery.nivo.slider.pack.js</pre>
+		    No need to edit the js files.
+		    <br>
+            <br>
+		  </li>
+		  <li>Contact form plugin <br>
+		    The contact form use ajax and use these javascript files:.
+		    <pre>contact.js<br>
+		    </pre>
+	      </li>
+	  </ol>
+		
+<hr>
+		
+		<h3 id="psdFiles"><strong>D) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>There are  PSDs inside the &quot;psd/&quot; folder.</p>
+		<p>Fonts are GeosansLight and Arial.</p>
+		<hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+	  <p>
+
+Slider images are royalty free from sxc.hu
+  <hr>
+        <h3 id="php"><strong>E) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is process.php, open this file and change the email and subject on line 2 and line 3.
+         No need to edit other code unless you really want to.
+        <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>TemplateSquare</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+</body>
+</html>

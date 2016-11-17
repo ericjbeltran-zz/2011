@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Genesis</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+
+});
+
+</script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body>
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+						<h1><a href="index.html">Genesis</a></h1>
+					</div><!-- end #logo -->
+				</div><!-- end #topleft -->
+				<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li class="current"><a href="#">Features</a>
+								<ul>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="tab.html">jQuery Tab</a></li>
+									<li><a href="styling.html">HTML Styling</a></li>
+									<li><a href="column.html">Column Layouts</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a>
+								<ul>
+									<li><a href="default.html">Default</a></li>
+									<li><a href="fullwidth.html">Full Width</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+									<li><a href="single.html">Blog Details</a></li>
+									<li><a href="table.html">Table Layout</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Portfolio</a>
+								<ul>
+									<li><a href="portfolio4.html">Portfolio Default</a></li>
+									<li><a href="portfolio.html">Portfolio One Column</a></li>
+									<li><a href="portfolio2.html">Portfolio Two Column</a></li>
+									<li><a href="portfolio3.html">Portfolio Three Column</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+			<div id="main">
+				<div id="content">
+					<div id="breadcrumb"><a href="#">Home</a> &raquo; <a href="#">HTML Styling</a></div>
+					<h1 class="pagetitle">HTML Styling</h1>
+						<h1>This is a h1 tag</h1>
+
+						<p> Morbi a eros sed nisi laoreet molestie. Nulla facilisi. Duis condimentum molestie lacus ac tincidunt. Cras rhoncus odio quis risus porta ullamcorper adipiscing nulla sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+						<h2>This is a h2 tag</h2>
+						<p>Donec iaculis mollis mauris, quis molestie est condimentum a. Pellentesque eu sapien eu augue cursus porta. Integer vestibulum eleifend egestas. Cras placerat porttitor ipsum ac aliquet. Etiam aliquam scelerisque ligula, id cursus urna laoreet sagittis. </p>
+						
+						
+						<h3>This is an h3 tag</h3>
+						<p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis.</p>
+						<h4>This is an h4 tag</h4>
+
+						<p>Duis eu velit turpis. Duis ac ipsum sed metus feugiat sollicitudin. Nullam erat lacus, mattis et suscipit vitae, gravida in neque. Morbi luctus mauris id ante congue euismod.</p>
+						<h5>This is an h5 tag</h5>
+						
+						<p>Fusce dictum fringilla porta. Duis scelerisque, est et vestibulum rhoncus, nisi tellus porta tellus, sit amet faucibus nisl nisl in est. Integer sit amet nibh ipsum.</p>
+						
+						
+						<h6>This is an h6 tag</h6>
+						<p>Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.</p>
+						<hr />
+
+						<h2>Highlight</h2>
+						<p><span class="highlight1">This is a highlight1 span class</span> Quisque gravida porttitor sodales. Mauris odio orci, vestibulum quis condimentum ac, vestibulum quis ipsum. Vivamus vulputate, metus non pulvinar commodo, enim odio tincidunt nunc, vel luctus mauris massa aliquet magna.   <span class="highlight2">This is a highlight2 span class.</span>  Morbi eros enim, tempor scelerisque dignissim id, hendrerit pulvinar tortor. </p>
+						
+						
+						<hr />
+						<h2>Unordered List</h2>
+						<ul>
+
+						  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+						  <li>Cras vitae ipsum eget mauris commodo viverra.</li>
+						  <li>Donec sed nisl justo, ut scelerisque lacus.</li>
+						  <li>Donec rhoncus mauris dapibus ante porta at ornare magna tincidunt.</li>
+						
+						
+						  <li>Nam at ligula enim, vel commodo arcu.</li>
+						  <li>Mauris tristique arcu at magna consequat fringilla.</li>
+
+						  <li>Etiam eget dui a neque condimentum sodales a sed massa.</li>
+						</ul>
+						<hr />
+						<h2>Ordered List</h2>
+						<ol>
+						
+						
+						  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+						  <li>Cras vitae ipsum eget mauris commodo viverra.</li>
+
+						  <li>Donec sed nisl justo, ut scelerisque lacus.</li>
+						  <li>Donec rhoncus mauris dapibus ante porta at ornare magna tincidunt.</li>
+						  <li>Nam at ligula enim, vel commodo arcu.</li>
+						  <li>Mauris tristique arcu at magna consequat fringilla.</li>
+						
+						
+						  <li>Etiam eget dui a neque condimentum sodales a sed massa.</li>
+						</ol>
+
+						<hr />
+						<h2>Images in Paragraph</h2>
+						<p><img src="images/content/tp-img.jpg" alt="" class="alignleft imgborder"/> Sed placerat libero quis metus malesuada venenatis. Proin vulputate, ligula id pellentesque laoreet, arcu odio tincidunt nunc, in dictum leo dui sed sapien. </p>
+						<p>Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at. Morbi a eros sed nisi laoreet molestie. Nulla facilisi. Duis condimentum molestie lacus ac tincidunt.Morbi a eros sed nisi laoreet molestie. Nulla facilisi.Morbi a eros sed nisi laoreet molestie. Nulla facilisi.</p>
+						
+						
+						<p><img src="images/content/tp-img.jpg" alt="" class="alignright imgborder" />Morbi a eros sed nisi laoreet molestie. Nulla facilisi. Duis condimentum molestie lacus ac tincidunt. Cras rhoncus odio quis risus porta ullamcorper adipiscing nulla sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in metus ligula, et ullamcorper odio. </p>
+						<p>Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. </p>
+
+						<hr />
+						<h2>Blockquotes</h2>
+						<blockquote class="right"><p>Sed placerat libero quis metus malesuada venenatis. Proin vulputate, ligula id pellentesque laoreet.  </p>
+						</blockquote>
+						<p>This is a blockquote. Donec iaculis mollis mauris. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br />
+
+											Nullam dignissim convallis est. Aenean mattis lacus ut dui hendrerit euismod consequat tortor volutpat.  </p>
+						<p> Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+						<blockquote class="left"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. </p>
+						
+						
+						</blockquote>
+						<p>Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+						<blockquote><p>Cras vitae congue arcu. Sed iaculis, purus quis imperdiet laoreet, dui arcu vulputate urna, non molestie enim tellus a metus. Pellentesque ac tortor ac quam hendrerit pharetra.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. </p>
+
+						
+						</blockquote >
+						<p>Vivamus placerat cursus lorem, id mollis enim cursus quis. Pellentesque ac tortor ac quam hendrerit pharetra. Integer turpis eros, vulputate et pellentesque rhoncus, tincidunt sodales est. Aliquam volutpat egestas leo vitae pretium. Sed et urna nisi, aliquet faucibus magna. </p>
+						
+						<hr />
+						<h2>Dropcaps</h2>
+						<p><span class="dropcap1">A</span>orem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. This is a blockquote. Aenean arcu elit, tristique semper pulvinar adipiscing.  Donec faucibus. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. </p>
+						<p><span class="dropcap2">B</span>aesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. </p>
+						<p><span class="dropcap3">C</span>aesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. </p>
+						
+						
+						<hr />
+						<h2>Code</h2>
+						
+						
+						<p>Vivamus placerat cursus lorem, id mollis enim cursus quis. Pellentesque ac tortor ac quam hendrerit pharetra. Integer turpis eros, vulputate et pellentesque rhoncus, tincidunt sodales est. Aliquam volutpat egestas leo vitae pretium. Sed et urna nisi, aliquet faucibus magna. </p>
+						<p>					<code>&lt;?php echo('Hello world!'); ?&gt;</code></p>
+
+						<hr />
+						<h2>Tables</h2>
+						<table>
+						<tbody>
+						<tr>
+						
+						
+						
+						<th>Header 1</th>
+						<th>Header 2</th>
+
+						<th>Header 3</th>
+						<th>Header 4</th>
+						<th>Header 5</th>
+						</tr>
+						
+						
+						<tr>
+						<td>Division 1</td>
+						<td>Division 2</td>
+
+						<td>Division 3</td>
+						
+						<td>Division 4</td>
+						<td>Division 5</td>
+						
+						
+						</tr>
+						<tr class="even">
+						<td>Division 1</td>
+						<td>Division 2</td>
+
+						<td>Division 3</td>
+						<td>Division 4</td>
+						<td>Division 5</td>
+						
+						
+						</tr>
+						
+						<tr>
+						<td>Division 1</td>
+						<td>Division 2</td>
+
+						<td>Division 3</td>
+						<td>Division 4</td>
+						<td>Division 5</td>
+						
+						
+						</tr>
+						<tr class="even">
+						<td>Division 1</td>
+						<td>Division 2</td>
+
+						
+						<td>Division 3</td>
+						<td>Division 4</td>
+						<td>Division 5</td>
+						
+						
+						</tr>
+						<tr>
+						<td>Division 1</td>
+						<td>Division 2</td>
+
+						<td>Division 3</td>
+						<td>Division 4</td>
+						<td>Division 5</td>
+						
+						
+						
+						</tr>
+						</tbody>
+						</table>
+				</div><!-- end #content -->
+				<div id="sideright">
+					<div class="gradient-side-top"></div>
+					<div id="sidebar">
+						<ul>
+							<li class="widget-container">
+								<h2 class="widget-title">About Us</h2>
+								<ul>
+									<li><a href="#">Company Profile</a></li>
+									<li><a href="#">Our Mission &amp; Vision</a></li>
+
+									<li><a href="#">Our Team</a></li>
+									<li><a href="#">Our Patners</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- end #sidebar -->
+					<div class="gradient-side-bottom"></div>
+				</div><!-- end #sideright -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Get In touch</h2>
+						<h2 class="uppercase">Genesis</h2>
+						<p>
+						Modern Land, 20<br />
+						45551 City, Country<br />
+						Phone: 123 4567 8999<br />
+						Fax: 123 4567 8998
+						</p>
+						<a href="contact.html" class="button2">Contact Form</a>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Post</h2>
+						<ul>
+							<li><a href="#">Proin consequat nunc at eros</a></li>
+							<li><a href="#">Maecenas sagittis metus</a></li>
+							<li><a href="#">Curabitur facilisis venenatis</a></li>
+							<li><a href="#">Ut sed tortor vel erat</a></li>
+							<li><a href="#">Nam non sem vitae erat</a></li>
+							<li><a href="#">Nulla vulputate velit massa</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Works</h2>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec aliquam ipsum risus</a></li>
+							<li><a href="#">Ut euismod nulla</a></li>
+							<li><a href="#">Sed ac metus a urna convallis</a></li>
+							<li><a href="#">Cursus eget vitae purus</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Categories</h2>
+						<ul>
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Oscomm</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth last">
+				<ul>
+					<li class="widget-container" id="widget-search">
+						<h2 class="widget-title">Search</h2>
+						<ul>
+							<li>
+							<form  method="get" action="" id="searchform">
+							<div><input type="text" class="inputbox" value="Search Here" onblur="if (this.value == ''){this.value = 'Search Here'; }" onfocus="if (this.value == 'Search Here') {this.value = ''; }"/></div>
+							</form><br />
+							<ul id="social">
+								<li><img src="images/content/i-flickr.png" alt="" /></li>
+								<li><img src="images/content/i-feed.png" alt="" /></li>
+								<li><img src="images/content/i-twitter.png" alt="" /></li>
+								<li><img src="images/content/i-fb.png" alt="" /></li>
+							</ul>
+							</li>
+						</ul>
+						<span class="copyright smalltext">Copyright &copy; 2010 Genesis<br />
+						All rights reserved.</span> 
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

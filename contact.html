@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Eric Beltran</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+
+});
+
+</script>
+<script type="text/javascript" src="js/contact.js"></script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+<style type="text/css">
+<!--
+.style3 {color: #666666; font-weight: bold; }
+-->
+</style>
+</head>
+<body>
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+                    	<h1><a href="index.html">ericbeltran.com</a></h1>
+   				  </div><!-- end #logo -->
+				</div><!-- end #topleft -->
+    			<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a class="active" href="index.html">Home</a></li>
+							<li><a href="portfolio.html">Portfolio</a>
+								<ul>
+									<li><a href="portfolio.html#printmedia">Print Design</a></li>
+									<li><a href="portfolio.html#interactivemedia">Interactive Media</a></li>
+									<li><a href="portfolio.html#videoproduction">Video Production</a></li>
+								</ul>
+							</li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li class="current"><a href="contact.html">Contact</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+
+			<div id="main">
+				<div id="content">
+					<h1 class="pagetitle">Contact Eric&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.facebook.com/people/Eric-Beltran/11505881" target="_blank">
+                    <img src="images/content/i-fb.png" alt="Facebook Fan Page" width="16" height="16" /></a>
+                    <a href="http://www.linkedin.com/in/ericbeltran" target="_blank">
+                  <img src="images/content/i-li.png" alt="LinkedIn" width="16" height="16" /></a></h1>
+					<p>eric@ericbeltran.com<br />
+				  </p>
+                    <p>503.309.9646 <span class="style3">Phone</span><br />
+                  eric_beltran <span class="style3">Skype</span><br />
+                  ericjbeltran <span class="style3">Google Talk</span></p>
+				  <p>If you are interested in ordering a <a href="pricing.html">web development package</a> or for inquiries into general development please complete the form below. You will receive a response within 24 hours.</p>
+					<div id="contactform">
+					  <form id="contact" action="">
+						<fieldset>
+						  <input type="text" name="name" id="name" size="30" value="Name (required)" onblur="if (this.value == ''){this.value = 'Name (required)'; }" onfocus="if (this.value == 'Name (required)') {this.value = ''; }" class="text-input" /><br />
+						  <input type="text" name="email" id="email" size="30" value="Email (required)" onblur="if (this.value == ''){this.value = 'Email (required)'; }" onfocus="if (this.value == 'Email (required)') {this.value = ''; }" class="text-input" /><br />
+					    <input type="text" name="phone" id="phone" size="30" value="Phone (optional)" onblur="if (this.value == ''){this.value = 'Phone (optional)'; }" onfocus="if (this.value == 'Phone (optional)') {this.value = ''; }" class="text-input" /><br />
+						   <input type="submit" name="submit" class="button" id="submit_btn" value="Submit"/>
+						 <textarea cols="20" rows="" name="msg" id="msg" onblur="if (this.innerHTML == ''){this.innerHTML = 'Type your comment here...'; }" onfocus="if (this.innerHTML == 'Type your comment here...') {this.innerHTML = ''; }">Tell me about your project...</textarea><br /><br /><br />
+						  <span class="error" id="name_error">Please enter name !</span>
+						  <span class="error" id="email_error">Please enter email address !</span>
+						  <span class="error" id="email_error2">Please enter valid email address !</span>
+						  <span class="error" id="msg_error">Please enter comment !</span>
+						 
+						</fieldset>
+					  </form>
+				  </div><!-- end #contactform -->
+				</div><!-- end #content -->
+				<div id="sideright">
+					<div class="gradient-side-top"></div>
+					<div id="sidebar">
+					<ul>                                             
+                        <p><iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqb23k6bcrvn6m69b4afs9k366o1lp0e4cltl4g4vmq0rdbpq0uppg7j7a4eqj7a88c6gejt1ou7gc12jhf74orrchqfmlermb9tf7mbcvhnb20c0iq7gi2frev9offhb21d8ggupsdfdemolmje7uj70tim8rkef0e94k1okaqbat0rtejbpdji4kdg&amp;w=200&amp;h=60" frameborder="0" allowtransparency="true" width="200" height="60"></iframe>	</p>
+
+                        </li>
+                    </ul>
+                </div><!-- end #sidebar -->
+                <div class="gradient-side-bottom"></div>
+            </div><!-- end #sideright -->
+            <div class="clear"></div><!-- end clear float -->
+        </div><!-- end #main -->
+    </div><!-- end #center-container-top -->
+
+	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+			<div class="one_fifth">
+			<span class="copyright smalltext" style="text-align:left;">
+            Copyright &copy; 2011 ericbeltran.com<br />
+            http://www.ericbeltran.com<br />
+            eric@ericbeltran.com<br />
+            503.395.8067</span>
+			</div><!-- end .one_fifth -->
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+
+            </div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

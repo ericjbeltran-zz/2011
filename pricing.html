@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Eric Beltran</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	
+	/* Function for tab */	
+	$(".tab-content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab-content:first").show(); //Show first tab content
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab-content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(1000); //Fade in the active content
+		return false;
+	});
+
+});
+
+</script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body>
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+                    	<h1><a href="index.html">ericbeltran.com</a></h1>
+   				  </div><!-- end #logo -->
+				</div><!-- end #topleft -->
+    			<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="portfolio.html">Portfolio</a>
+								<ul>
+									<li><a href="portfolio.html#printmedia">Print Design</a></li>
+									<li><a href="portfolio.html#interactivemedia">Interactive Media</a></li>
+									<li><a href="portfolio.html#videoproduction">Video Production</a></li>
+								</ul>
+							</li>
+							<li class="current"><a class="active" href="pricing.html">Pricing</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+
+			<div id="main">
+				<h1 class="pagetitle">Web Development Packages</h1>
+				<div class="table-box-container">
+							<ul class="table_header">
+								<li class="one"><h3>Design Specifications</h3></li>
+								<li class="two"><h3>Silver</h3></li>
+								<li class="three"><h3>Bronze</h3></li>
+								<li class="four"><h3>Gold</h3></li>
+							</ul>
+            				<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-9.png" alt="" /></span>Free Consultation</li>
+								<li class="two"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+            				<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-7.png" alt="" /></span>Number of Pages</li>
+								<li class="two">3</li>
+								<li class="three">6</li>
+								<li class="four">Unlimited</li>
+							</ul>
+                            <ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-9.png" alt="" /></span>Rounds of Revision</li>
+								<li class="two">2</li>
+								<li class="three">4</li>
+								<li class="four">Unlimited</li>
+							</ul>
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-7.png" alt="" /></span>Email Contact Form</li>
+								<li class="two"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-9.png" alt="" /></span>Web Analytics Integration</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>                                                      
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-7.png" alt="" /></span>Integrated Chat Support</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>                                                      
+							<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-9.png" alt="" /></span>Onsite Professional Photography</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>                                                                       
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-7.png" alt="" /></span>Custom Flash Development</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-9.png" alt="" /></span>Custom Logo</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-7.png" alt="" /></span>24/7 Support</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-9.png" alt="" /></span>Two Years Free Hosting</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-price">
+								<li class="one">&nbsp;</li>
+							  <li class="two">$300.00 <br />
+							    <a href="contact.html">order now</a> </li>
+
+								<li class="three">$600.00 <br />
+							    <a href="contact.html">order now</a></li>
+								<li class="four">$1200.00 <br />
+							    <a href="contact.html">order now</a></li>
+							</ul>
+						<div class="clear"></div><!-- clear float -->
+                    <p>$35 and hour for non-packaged graphic design, e-learning, e-commerce, media development projects.</p>
+				</div><!-- end table-box-container -->
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+			<div class="one_fifth">
+			<span class="copyright smalltext" style="text-align:left;">
+            Copyright &copy; 2011 ericbeltran.com<br />
+            http://www.ericbeltran.com<br />
+            eric@ericbeltran.com<br />
+            503.395.8067</span>
+			</div><!-- end .one_fifth -->
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+            </form>
+            </div><!-- end .one_fifth -->
+
+            </div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

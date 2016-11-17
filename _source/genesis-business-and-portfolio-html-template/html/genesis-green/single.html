@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Genesis</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript" src="js/jquery.imgr.min.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	
+	$("img.rounded").imgr({radius:"10px"});
+
+
+});
+
+</script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body>
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+						<h1><a href="index.html">Genesis</a></h1>
+					</div><!-- end #logo -->
+				</div><!-- end #topleft -->
+				<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Features</a>
+								<ul>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="tab.html">jQuery Tab</a></li>
+									<li><a href="styling.html">HTML Styling</a></li>
+									<li><a href="column.html">Column Layouts</a></li>
+								</ul>
+							</li>
+							<li class="current"><a href="#">Pages</a>
+								<ul>
+									<li><a href="default.html">Default</a></li>
+									<li><a href="fullwidth.html">Full Width</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+									<li><a href="single.html">Blog Details</a></li>
+									<li><a href="table.html">Table Layout</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Portfolio</a>
+								<ul>
+									<li><a href="portfolio4.html">Portfolio Default</a></li>
+									<li><a href="portfolio.html">Portfolio One Column</a></li>
+									<li><a href="portfolio2.html">Portfolio Two Column</a></li>
+									<li><a href="portfolio3.html">Portfolio Three Column</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+			<div id="main">
+				<div id="content">
+					<div id="breadcrumb"><a href="#">Home</a> &raquo; <a href="#">Blog</a></div>
+					<h1 class="pagetitle">Blog</h1>
+					<div class="post" id="singlepost">
+						<h2 class="posttitle"><a href="single.html">Excepteur sint occaecat cupidatat non proid</a> </h2>
+						<div class="entry-utility">
+						<span class="postauthor">Posted by <a href="#">Admin</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="postcat">Posted in <a href="#">Design</a> </span>&nbsp;&nbsp;&nbsp;&nbsp;Posted in <span class="postdate">December 29, 2010</span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<span class="postcomment"><a href="#">2 Comments</a></span>   
+						</div>
+	
+						<div class="entry">
+						<div class="imgglow"><img src="images/content/post1.jpg" alt="" class="rounded" /></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Vestibulum dictum viverra augue vitae venenatis. Nullam vitae ipsum ligula. Quisque nunc neque, commodo vitae interdum eget, sollicitudin id tortor. Morbi molestie dignissim ornare. Donec placerat sem ac purus mattis nec tincidunt dolor dignissim. </p>
+						</div>
+					</div><!-- end post -->
+					<div id="singlebox">
+						<div id="authorbox">
+							<h2>About The Author</h2>
+							<img src="images/content/avatar1.jpg" alt="" class="alignleft imgborder" />
+							<span><strong>Admin</strong>, <br />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+		ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+						</div><!-- end #authorbox -->
+						<div id="relatedbox">
+							<h2>Related Post</h2>
+							<ul>
+								<li><span class="smalltext">December 31, 2010</span>
+								<br /><a href="#"><strong>Vestibulum dictum viverra augue vitae</strong></a>
+								</li>
+								<li><span class="smalltext">November 19, 2010</span>
+								<br /><a href="#"><strong>Nullam vitae ipsum ligula</strong></a>
+								</li>
+								<li><span class="smalltext">November 10, 2010</span>
+								<br /><a href="#"><strong>Duis aute irure dolor in reprehenderit</strong></a>
+								</li>
+							</ul>
+						</div><!-- end #relatedbox -->
+						<div class="clear"></div><!-- end clear float -->
+					</div><!-- end #singlebox -->
+					<div id="comment">
+								<h2 class="comment-title">3 Comments</h2>
+								<ol class="commentlist">
+			
+									<li>
+										<div class="avatar">
+											<img src="images/content/avatar2.jpg" alt="" class="imgborder" />
+										</div>
+										<div class="comment-text">
+										<a href="#" class="reply">Reply</a>
+										<cite class="fn">Jonathan Doe</cite>
+										<br /><span class="time">Sep 16,2010 2:16 am </span><br/>
+										<span class="comment-body">Vestibulum dictum viverra augue vitae venenatis. Nullam vitae ipsum ligula. Quisque nunc neque, commodo vitae interdum eget, sollicitudin id tortor. Morbi molestie dignissim ornare. Morbi quis 
+consectetur lectus. Donec non nulla id ante tristique viverra. In hac habitasse platea dictumst. Cras sit amet lectus sem. </span>
+										</div>
+										<ol class="child">
+											<li>
+												<div class="avatar">
+													<img src="images/content/avatar3.jpg" alt="" class="imgborder" />
+												</div>
+												<div class="comment-text">
+													<cite class="fn">Jane</cite>
+													<br /><span class="time">Sep 16,2010 2:16 am</span><br />
+												<span class="comment-body">Nullam vitae ipsum ligula. Vestibulum dictum viverra augue vitae venenatis. Nullam vitae ipsum ligula. Quisque nunc neque, commodo vitae interdum eget, Donec non nulla id ante 
+tristique viverra. In hac habitasse platea dictumst. Cras sit amet lectus sem. Quisque nunc 
+neque, commodo vitae interdum eget, sollicitudin id tortor. Morbi molestie dignissim ornare. Morbi quis consectetur lectus. </span>
+												<a href="#" class="reply">Reply</a>
+												</div>
+											</li>
+										</ol>
+									</li>
+			
+									<li>
+										<div class="avatar">
+											<img src="images/content/avatar1.jpg" alt="" class="imgborder" />
+										</div>
+										<div class="comment-text">
+											<cite class="fn">Admin</cite>
+											<br /><span class="time">Sep 16,2010 2:16 am</span><br/>
+										<span class="comment-body">Vestibulum dictum viverra augue vitae venenatis. Nullam vitae ipsum ligula. Quisque nunc neque, commodo vitae interdum eget, sollicitudin id tortor. Morbi molestie dignissim ornare. Morbi quis 
+consectetur lectus. Donec non nulla id ante tristique viverra. In hac habitasse platea dictumst. Cras sit amet lectus sem. </span>
+			
+										<a href="#" class="reply">Reply</a>
+										</div>
+									</li>
+								</ol>
+								
+								<h2 class="respond">Leave a Comment</h2>
+			
+								<div id="commentform">
+								  <form action="" method="post">
+									<fieldset>
+									  <input type="text" name="name" id="name" size="30" value="Name (required)" onblur="if (this.value == ''){this.value = 'Name (required)'; }" onfocus="if (this.value == 'Name (required)') {this.value = ''; }" class="text-input" /><br />
+									  <input type="text" name="email" id="email" size="30" value="Email (required)" onblur="if (this.value == ''){this.value = 'Email (required)'; }" onfocus="if (this.value == 'Email (required)') {this.value = ''; }" class="text-input" /><br />
+									  <input type="text" name="url" id="url" size="30" value="Website (Optional)" onblur="if (this.value == ''){this.value = 'Website (Optional)'; }" onfocus="if (this.value == 'Website (Optional)') {this.value = ''; }" class="text-input" /><br />
+									   <input type="submit" name="submit" class="button" id="submit_btn" value="Submit"/>
+									 <textarea cols="20" rows="" name="msg" id="msg" onblur="if (this.innerHTML == ''){this.innerHTML = 'Type your comment here...'; }" onfocus="if (this.innerHTML == 'Type your comment here...') {this.innerHTML = ''; }">Type your comment here...</textarea><br /><br /><br />
+									</fieldset>
+								  </form>
+								</div><!-- end #contactform -->
+						
+					</div>	<!-- end #comment -->				
+				
+				</div><!-- end #content -->
+				<div id="sideright">
+					<div class="gradient-side-top"></div>
+					<div id="sidebar">
+						<ul>
+							<li class="widget-container">
+								<h2 class="widget-title">Categories</h2>
+								<ul>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Html</a></li>
+									<li><a href="#">Wordpress</a></li>
+									<li><a href="#">Adobe</a></li>
+								</ul>
+							</li>
+							<li class="widget-container">
+								<h2 class="widget-title">Popular Post</h2>
+								<ul class="popular-post">
+									<li>
+										<img src="images/content/pp1.jpg" alt="" class="alignleft imgborder" /><strong>Duis id turpis nunc. Duis augue purus</strong><br />
+										<span>Viverra non euismod eget, consequat sit amet augue. Fusce tristique.</span>
+									</li>
+									<li>
+										<img src="images/content/pp2.jpg" alt="" class="alignleft imgborder" /><strong>Duis id turpis nunc. Duis augue purus</strong><br />
+										<span>Viverra non euismod eget, consequat sit amet augue. Fusce tristique.</span>
+									</li>
+									<li>
+										<img src="images/content/pp3.jpg" alt="" class="alignleft imgborder" /><strong>Duis id turpis nunc. Duis augue purus</strong><br />
+										<span>Viverra non euismod eget, consequat sit amet augue. Fusce tristique.</span>
+									</li>
+								</ul>
+							</li>
+							<li class="widget-container" id="widget-flickr">
+								<h2 class="widget-title">Flickr</h2>
+								<div class="textwidget">
+								<img src="images/content/flickr1.jpg" alt="" class="alignleft imgborder" />
+								<img src="images/content/flickr2.jpg" alt="" class="alignleft imgborder" />
+								<img src="images/content/flickr3.jpg" alt="" class="alignleft imgborder nomargin" />
+								<img src="images/content/flickr4.jpg" alt="" class="alignleft imgborder" />
+								<img src="images/content/flickr5.jpg" alt="" class="alignleft imgborder" />
+								<img src="images/content/flickr6.jpg" alt="" class="alignleft imgborder nomargin" />
+								<div class="clear"></div>
+								</div>
+							</li>
+						</ul>
+					</div><!-- end #sidebar -->
+					<div class="gradient-side-bottom"></div>
+				</div><!-- end #sideright -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Get In touch</h2>
+						<h2 class="uppercase">Genesis</h2>
+						<p>
+						Modern Land, 20<br />
+						45551 City, Country<br />
+						Phone: 123 4567 8999<br />
+						Fax: 123 4567 8998
+						</p>
+						<a href="contact.html" class="button2">Contact Form</a>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Post</h2>
+						<ul>
+							<li><a href="#">Proin consequat nunc at eros</a></li>
+							<li><a href="#">Maecenas sagittis metus</a></li>
+							<li><a href="#">Curabitur facilisis venenatis</a></li>
+							<li><a href="#">Ut sed tortor vel erat</a></li>
+							<li><a href="#">Nam non sem vitae erat</a></li>
+							<li><a href="#">Nulla vulputate velit massa</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Works</h2>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec aliquam ipsum risus</a></li>
+							<li><a href="#">Ut euismod nulla</a></li>
+							<li><a href="#">Sed ac metus a urna convallis</a></li>
+							<li><a href="#">Cursus eget vitae purus</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Categories</h2>
+						<ul>
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Oscomm</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth last">
+				<ul>
+					<li class="widget-container" id="widget-search">
+						<h2 class="widget-title">Search</h2>
+						<ul>
+							<li>
+							<form  method="get" action="" id="searchform">
+							<div><input type="text" class="inputbox" value="Search Here" onblur="if (this.value == ''){this.value = 'Search Here'; }" onfocus="if (this.value == 'Search Here') {this.value = ''; }"/></div>
+							</form><br />
+							<ul id="social">
+								<li><img src="images/content/i-flickr.png" alt="" /></li>
+								<li><img src="images/content/i-feed.png" alt="" /></li>
+								<li><img src="images/content/i-twitter.png" alt="" /></li>
+								<li><img src="images/content/i-fb.png" alt="" /></li>
+							</ul>
+							</li>
+						</ul>
+						<span class="copyright smalltext">Copyright &copy; 2010 Genesis<br />
+						All rights reserved.</span> 
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

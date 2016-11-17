@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Genesis</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/nivo-slider.css" rel="stylesheet"  type="text/css" media="screen" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6') ('.middle-text');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+	$(document).ready(function(){
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	
+	/* if javascript disabled */
+	$("body").removeClass("nojs").addClass("js");
+
+	
+	
+
+});
+</script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+/* homepage slideshow */
+$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect:'fade', //Specify sets like: 'fold,fade,sliceDown'
+		slices:15,
+		animSpeed:500, //Slide transition speed
+		pauseTime:6000,
+		directionNav:true, //Next &amp; Prev
+		startSlide:0 //Set starting Slide (0 index)
+	});
+});
+</script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body class="nojs">
+	<div id="outer-container-top">
+	<div id="outer-container-bgtoppattern">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+						<h1><a href="index.html">Genesis</a></h1>
+					</div><!-- end #logo -->
+				</div><!-- end #topleft -->
+				<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a class="active" href="index.html">Home</a></li>
+							<li><a href="#">Features</a>
+								<ul>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="tab.html">jQuery Tab</a></li>
+									<li><a href="styling.html">HTML Styling</a></li>
+									<li><a href="column.html">Column Layouts</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a>
+								<ul>
+									<li><a href="default.html">Default</a></li>
+									<li><a href="fullwidth.html">Full Width</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+									<li><a href="single.html">Blog Details</a></li>
+									<li><a href="table.html">Table Layout</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Portfolio</a>
+								<ul>
+									<li><a href="portfolio4.html">Portfolio Default</a></li>
+									<li><a href="portfolio.html">Portfolio One Column</a></li>
+									<li><a href="portfolio2.html">Portfolio Two Column</a></li>
+									<li><a href="portfolio3.html">Portfolio Three Column</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+			<div id="header">
+				<div id="slider">
+					<img src="images/slide1.jpg" alt=""/>
+					<img src="images/slide2.jpg" alt="" />
+					<img src="images/slide3.jpg" alt=""/>
+			   </div>
+			   <div id="frame-slider"></div>
+			</div><!-- end #header -->
+			<div id="main">
+				<div class="middle-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</div>
+				<ul class="four_column">
+					<li>
+						<h3 class="uppercase">Business Strategies</h3>
+						<img src="images/content/icon1.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel erat sit.</span></p><br />
+						<p>Nam sollicitudin consectetur volutpat. Curabitur ultricies, leo non dignissim auctor, mauris tellus vehicula leo, at gravida quam elit id erat. Maecenas faucibus suscipit velit.</p>
+						<a href="#">Read More</a>
+					</li>
+					<li>
+						<h3 class="uppercase">Business Planning</h3>
+						<img src="images/content/icon2.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel erat sit.</span></p><br />
+						<p>Maecenas faucibus suscipit velit, sed dignissim orci semper et. Morbi ultricies ornare arcu, in vehicula mauris adipiscing ac. Quisque quam mi, suscipit consectetur.
+</p>
+					<a href="#">Read More</a>
+					</li>
+					<li>
+						<h3 class="uppercase">Business Analystic</h3>
+						<img src="images/content/icon3.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel erat sit.</span></p><br />
+						<p>Nam sollicitudin consectetur volutpat. Curabitur ultricies, leo non dignissim auctor, mauris tellus vehicula leo, at gravida quam elit id erat. Maecenas faucibus suscipit velit.</p>
+						<a href="#">Read More</a>
+					</li>
+					<li class="last">
+						<h3 class="uppercase">Business Support</h3>
+						<img src="images/content/icon4.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel erat sit.</span></p><br />
+						<p>Maecenas faucibus suscipit velit, sed dignissim orci semper et. Morbi ultricies ornare arcu, in vehicula mauris adipiscing ac. Quisque quam mi, suscipit consectetur.
+</p>
+						<a href="#">Read More</a>
+					</li>
+				</ul>
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern -->
+	</div><!-- end #outer-container-top -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Get In touch</h2>
+						<h2 class="uppercase">Genesis</h2>
+						<p>
+						Modern Land, 20<br />
+						45551 City, Country<br />
+						Phone: 123 4567 8999<br />
+						Fax: 123 4567 8998
+						</p>
+						<a href="contact.html" class="button2">Contact Form</a>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Post</h2>
+						<ul>
+							<li><a href="#">Proin consequat nunc at eros</a></li>
+							<li><a href="#">Maecenas sagittis metus</a></li>
+							<li><a href="#">Curabitur facilisis venenatis</a></li>
+							<li><a href="#">Ut sed tortor vel erat</a></li>
+
+							<li><a href="#">Nam non sem vitae erat</a></li>
+							<li><a href="#">Nulla vulputate velit massa</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Works</h2>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec aliquam ipsum risus</a></li>
+							<li><a href="#">Ut euismod nulla</a></li>
+
+							<li><a href="#">Sed ac metus a urna convallis</a></li>
+							<li><a href="#">Cursus eget vitae purus</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Categories</h2>
+						<ul>
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Oscomm</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth last">
+				<ul>
+					<li class="widget-container" id="widget-search">
+						<h2 class="widget-title">Search</h2>
+						<ul>
+							<li>
+							<form  method="get" action="" id="searchform">
+							<div><input type="text" class="inputbox" value="Search Here" onblur="if (this.value == ''){this.value = 'Search Here'; }" onfocus="if (this.value == 'Search Here') {this.value = ''; }"/></div>
+							</form><br />
+							<ul id="social">
+								<li><img src="images/content/i-flickr.png" alt="" /></li>
+								<li><img src="images/content/i-feed.png" alt="" /></li>
+								<li><img src="images/content/i-twitter.png" alt="" /></li>
+								<li><img src="images/content/i-fb.png" alt="" /></li>
+							</ul>
+							</li>
+						</ul>
+						<span class="copyright smalltext">Copyright &copy; 2010 Genesis<br />
+						All rights reserved.</span> 
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+			</div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

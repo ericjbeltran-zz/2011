@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="ericbeltran.com" />
+<meta name="description" content="Full service multimedia services. Professional print design, web design, interactive media and video production." />
+<title>Eric Beltran</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/nivo-slider.css" rel="stylesheet"  type="text/css" media="screen" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6') ('.middle-text');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+	$(document).ready(function(){
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	
+	/* if javascript disabled */
+	$("body").removeClass("nojs").addClass("js");
+
+});
+</script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+/* homepage slideshow */
+$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect:'fade', //Specify sets like: 'fold,fade,sliceDown'
+		slices:15,
+		animSpeed:500, //Slide transition speed
+		pauseTime:6000,
+		pauseOnHover:true, 
+        directionNav:true, //Next &amp; Prev
+        directionNavHide:true, //Only show on hover
+		startSlide:0 //Set starting Slide (0 index)
+	});
+});
+</script>
+
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body class="nojs">
+	<div id="outer-container-top">
+	<div id="outer-container-bgtoppattern">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+                    	<h1><a href="index.html">ericbeltran.com</a></h1>
+   				  </div><!-- end #logo -->
+				</div><!-- end #topleft -->
+			  <div id="topright">
+				<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li class="current"><li><a href="index.html">Home</a></li>
+							<li><a class="active" href="portfolio.html">Portfolio</a>
+								<ul>
+									<li><a href="portfolio.html#printmedia">Print Design</a></li>
+									<li><a href="portfolio.html#interactivemedia">Interactive Media</a></li>
+									<li><a href="portfolio.html#videoproduction">Video Production</a></li>
+								</ul>
+							</li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+
+			<div id="header">
+				<div id="slider">
+					<img src="images/slider/slide2.jpg" alt="Print Design" />
+					<img src="images/slider/slide3.jpg" alt="Interactive Media"/>
+					<img src="images/slider/slide1.jpg" alt="Web Design"/>
+					<img src="images/slider/slide7.jpg" alt="Web Analytics"/>
+       				<img src="images/slider/slide6.jpg" alt="Video Production"/>
+					<img src="images/slider/slide4.jpg" alt="Print Design"/>
+					<img src="images/slider/slide5.jpg" alt="Print Design"/>
+			   </div>
+			   <div id="frame-slider"></div>
+			</div><!-- end #header -->
+			<div id="main">
+				<div class="middle-text">Meeting all your online business and multimedia needs.</div>
+				<ul class="four_column">
+					<li>
+						<h3 class="uppercase">E-Commerce</h3>
+						<img src="images/content/icon1.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">
+                        &bull;&nbsp;Email campaigns<br />
+                        &bull;&nbsp;Banner ads<br />
+                        &bull;&nbsp;Groupon deals<br />
+                      &bull;&nbsp;Fan pages</span></p>
+						<p>Trace transactions to campaigns and keywords, get loyalty and latency metrics, and identify your revenue sources.</p>
+					</li>
+					<li>
+						<h3 class="uppercase">Branding</h3>
+						<img src="images/content/icon2.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">
+                        &bull;&nbsp;Custom logos<br />
+                        &bull;&nbsp;Business cards<br />
+                        &bull;&nbsp;Media kits<br />
+                        &bull;&nbsp;Websites</span></p>
+						<p>Create your identity and brand your business with a custom branding package or update your existing identity for a new look and feel.</p>
+					</li>
+					<li>
+						<h3 class="uppercase">Analytics</h3>
+						<img src="images/content/icon3.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">
+                        &bull;&nbsp;Analyze traffic<br />
+                        &bull;&nbsp;Track sales<br />
+                        &bull;&nbsp;Measure goals<br />
+                        &bull;&nbsp;Trace transactions</span></p>
+                        <p>Get the data you need, organized in the way you want to see it with custom reports, custom variables, and a flexible tracking API.</p>
+					</li>
+					<li class="last">
+						<h3 class="uppercase">E-Learning</h3>
+						<img src="images/content/icon4.gif" alt="" title="" class="alignleft" />
+						<p><span class="smalltext">
+						&bull;&nbsp;Internal Training<br />
+                        &bull;&nbsp;Online Assessment<br />
+                        &bull;&nbsp;Multimedia Develoment<br />
+                        &bull;&nbsp;Instructional Applications</span></p>
+						<p>Streamline your new hire training with an internal training course. Continue employee  development inexpensively and professionally.</p>
+					</li>
+				</ul>
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern -->
+	</div><!-- end #outer-container-top -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+			<div class="one_fifth">
+			<span class="copyright smalltext" style="text-align:left;">
+            Copyright &copy; 2011 ericbeltran.com<br />
+            http://www.ericbeltran.com<br />
+            eric@ericbeltran.com<br />
+            503.395.8067</span>
+			</div><!-- end .one_fifth -->
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+            </form>
+            </div><!-- end .one_fifth -->
+
+            </div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

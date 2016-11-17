@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Genesis</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+
+});
+
+</script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body>
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+						<h1><a href="index.html">Genesis</a></h1>
+					</div><!-- end #logo -->
+				</div><!-- end #topleft -->
+				<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Features</a>
+								<ul>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="tab.html">jQuery Tab</a></li>
+									<li><a href="styling.html">HTML Styling</a></li>
+									<li><a href="column.html">Column Layouts</a></li>
+								</ul>
+							</li>
+							<li class="current"><a href="#">Pages</a>
+								<ul>
+									<li><a href="default.html">Default</a></li>
+									<li><a href="fullwidth.html">Full Width</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+									<li><a href="single.html">Blog Details</a></li>
+									<li><a href="table.html">Table Layout</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Portfolio</a>
+								<ul>
+									<li><a href="portfolio4.html">Portfolio Default</a></li>
+									<li><a href="portfolio.html">Portfolio One Column</a></li>
+									<li><a href="portfolio2.html">Portfolio Two Column</a></li>
+									<li><a href="portfolio3.html">Portfolio Three Column</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+			<div id="main">
+				<div id="breadcrumb"><a href="#">Home</a> &raquo; <a href="#">Full Width</a></div>
+				<h1 class="pagetitle">Full Width</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nisl feugiat ante viverra ullamcorper ut eget nisi. Donec adipiscing condimentum dolor eu volutpat. Nulla dolor ligula, aliquet in consequat quis, varius vel arcu. In eu varius arcu. Duis quam sem, bibendum et tristique nec, suscipit laoreet odio. </p>
+
+				
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla euismod bibendum nunc at aliquet. I consequat, turpis dictum ullamcorper porttitor, erat orci auctor justo, quis tempus lectus nisl porta enim. </p>
+				
+				<ul class="three_column">
+				<li><img src="images/content/fw-pic1.jpg" alt="" class="imgborder" /></li>
+				
+				<li><img src="images/content/fw-pic2.jpg" alt="" class="imgborder" /></li>
+				<li class="last"><img src="images/content/fw-pic3.jpg" alt="" class="imgborder" /></li>
+				
+				</ul>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla euismod bibendum nunc at aliquet. I consequat, turpis dictum ullamcorper porttitor, erat orci auctor justo, quis tempus lectus nisl porta enim. </p>
+
+				
+				<h4>This is Title</h4>
+				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ut enim vitae erat convallis fermentum ut in augue. Aliquam a purus tristique purus rutrum consequat. Mauris viverra tellus a elit viverra ac faucibus nisi tincidunt. Sed quis malesuada quam. Nunc luctus, arcu eget congue blandit, lorem tellus euismod velit, a malesuada est justo id turpis.</p>
+				
+				<h4>Vivamus commodo mollis dapibus</h4>
+				
+				<p>Vivamus commodo mollis dapibus. Sed at orci quis justo ullamcorper pharetra. Donec mattis libero volutpat tellus commodo placerat. Integer mattis felis sit amet turpis hendrerit convallis.</p>
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Get In touch</h2>
+						<h2 class="uppercase">Genesis</h2>
+						<p>
+						Modern Land, 20<br />
+						45551 City, Country<br />
+						Phone: 123 4567 8999<br />
+						Fax: 123 4567 8998
+						</p>
+						<a href="contact.html" class="button2">Contact Form</a>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Post</h2>
+						<ul>
+							<li><a href="#">Proin consequat nunc at eros</a></li>
+							<li><a href="#">Maecenas sagittis metus</a></li>
+							<li><a href="#">Curabitur facilisis venenatis</a></li>
+							<li><a href="#">Ut sed tortor vel erat</a></li>
+							<li><a href="#">Nam non sem vitae erat</a></li>
+							<li><a href="#">Nulla vulputate velit massa</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Works</h2>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec aliquam ipsum risus</a></li>
+							<li><a href="#">Ut euismod nulla</a></li>
+							<li><a href="#">Sed ac metus a urna convallis</a></li>
+							<li><a href="#">Cursus eget vitae purus</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Categories</h2>
+						<ul>
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Oscomm</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth last">
+				<ul>
+					<li class="widget-container" id="widget-search">
+						<h2 class="widget-title">Search</h2>
+						<ul>
+							<li>
+							<form  method="get" action="" id="searchform">
+							<div><input type="text" class="inputbox" value="Search Here" onblur="if (this.value == ''){this.value = 'Search Here'; }" onfocus="if (this.value == 'Search Here') {this.value = ''; }"/></div>
+							</form><br />
+							<ul id="social">
+								<li><img src="images/content/i-flickr.png" alt="" /></li>
+								<li><img src="images/content/i-feed.png" alt="" /></li>
+								<li><img src="images/content/i-twitter.png" alt="" /></li>
+								<li><img src="images/content/i-fb.png" alt="" /></li>
+							</ul>
+							</li>
+						</ul>
+						<span class="copyright smalltext">Copyright &copy; 2010 Genesis<br />
+						All rights reserved.</span> 
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

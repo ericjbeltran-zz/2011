@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Genesis</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	
+	/* Function for tab */	
+	$(".tab-content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab-content:first").show(); //Show first tab content
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab-content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(1000); //Fade in the active content
+		return false;
+	});
+
+});
+
+</script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body>
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+						<h1><a href="index.html">Genesis</a></h1>
+					</div><!-- end #logo -->
+				</div><!-- end #topleft -->
+				<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Features</a>
+								<ul>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="tab.html">jQuery Tab</a></li>
+									<li><a href="styling.html">HTML Styling</a></li>
+									<li><a href="column.html">Column Layouts</a></li>
+								</ul>
+							</li>
+							<li class="current"><a href="#">Pages</a>
+								<ul>
+									<li><a href="default.html">Default</a></li>
+									<li><a href="fullwidth.html">Full Width</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+									<li><a href="single.html">Blog Details</a></li>
+									<li><a href="table.html">Table Layout</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Portfolio</a>
+								<ul>
+									<li><a href="portfolio4.html">Portfolio Default</a></li>
+									<li><a href="portfolio.html">Portfolio One Column</a></li>
+									<li><a href="portfolio2.html">Portfolio Two Column</a></li>
+									<li><a href="portfolio3.html">Portfolio Three Column</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+			<div id="main">
+				<div id="breadcrumb"><a href="#">Home</a> &raquo; <a href="#">Table Layout</a></div>
+				<h1 class="pagetitle">Table Layout</h1>
+				<p>This Table use ul and li tags.</p>
+			<div class="table-box-container">
+						
+							<ul class="table_header">
+								<li class="one"><h3>Plan Specifications</h3></li>
+								<li class="two"><h3>Silver</h3></li>
+								<li class="three"><h3>Bronze</h3></li>
+
+								<li class="four"><h3>Gold</h3></li>
+							</ul>
+							<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-1.png" alt="" /></span>Disk Space</li>
+								<li class="two">Unlimited</li>
+								<li class="three">Unlimited</li>
+								<li class="four">Unlimited</li>
+
+							</ul>
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-2.png" alt="" /></span>24/7 Support</li>
+								<li class="two"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-odd">
+
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-3.png" alt="" /></span>Hosted Domains</li>
+								<li class="two">Unlimited</li>
+								<li class="three">Unlimited</li>
+								<li class="four">Unlimited</li>
+							</ul>
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-4.png" alt="" /></span>Email Accounts</li>
+
+								<li class="two">Unlimited</li>
+								<li class="three">Unlimited</li>
+								<li class="four">Unlimited</li>
+							</ul>
+							<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-5.png" alt="" /></span>Bandwith Allowance</li>
+								<li class="two">Unlimited</li>
+
+								<li class="three">Unlimited</li>
+								<li class="four">Unlimited</li>
+							</ul>
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-6.png" alt="" /></span>Guaranteed Network Uptime</li>
+								<li class="two"><img src="images/content/icon/icon-no.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-odd">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-7.png" alt="" /></span>CGI, Ruby (RoR),Perl, PHP, MySQL</li>
+								<li class="two"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-8.png" alt="" /></span>Free Domains For Life</li>
+								<li class="two">1</li>
+								<li class="three">3</li>
+								<li class="four">3</li>
+							</ul>
+							<ul class="tbl-odd">
+
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-9.png" alt="" /></span>Free Site Builder</li>
+								<li class="two"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="three"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+								<li class="four"><img src="images/content/icon/icon-yes.png" alt="" /></li>
+							</ul>
+							<ul class="tbl-even">
+								<li class="one"><span class="icontable"><img src="images/content/icon/icon-4.png" alt="" /></span>SQL databases</li>
+								<li class="two">Unlimited</li>
+
+								<li class="three">Unlimited</li>
+								<li class="four">Unlimited</li>
+							</ul>
+							<ul class="tbl-price">
+								<li class="one">&nbsp;</li>
+							  <li class="two">$150.00/m <br />
+							    <a href="#">order now</a> </li>
+
+								<li class="three">$200.00/m <br />
+							    <a href="#">order now</a></li>
+								<li class="four">$250.00/m <br />
+							    <a href="#">order now</a></li>
+							</ul>
+
+
+						<div class="clear"></div><!-- clear float -->
+					</div><!-- end table-box-container -->
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Get In touch</h2>
+						<h2 class="uppercase">Genesis</h2>
+						<p>
+						Modern Land, 20<br />
+						45551 City, Country<br />
+						Phone: 123 4567 8999<br />
+						Fax: 123 4567 8998
+						</p>
+						<a href="contact.html" class="button2">Contact Form</a>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Post</h2>
+						<ul>
+							<li><a href="#">Proin consequat nunc at eros</a></li>
+							<li><a href="#">Maecenas sagittis metus</a></li>
+							<li><a href="#">Curabitur facilisis venenatis</a></li>
+							<li><a href="#">Ut sed tortor vel erat</a></li>
+							<li><a href="#">Nam non sem vitae erat</a></li>
+							<li><a href="#">Nulla vulputate velit massa</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Works</h2>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec aliquam ipsum risus</a></li>
+							<li><a href="#">Ut euismod nulla</a></li>
+							<li><a href="#">Sed ac metus a urna convallis</a></li>
+							<li><a href="#">Cursus eget vitae purus</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Categories</h2>
+						<ul>
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Oscomm</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth last">
+				<ul>
+					<li class="widget-container" id="widget-search">
+						<h2 class="widget-title">Search</h2>
+						<ul>
+							<li>
+							<form  method="get" action="" id="searchform">
+							<div><input type="text" class="inputbox" value="Search Here" onblur="if (this.value == ''){this.value = 'Search Here'; }" onfocus="if (this.value == 'Search Here') {this.value = ''; }"/></div>
+							</form><br />
+							<ul id="social">
+								<li><img src="images/content/i-flickr.png" alt="" /></li>
+								<li><img src="images/content/i-feed.png" alt="" /></li>
+								<li><img src="images/content/i-twitter.png" alt="" /></li>
+								<li><img src="images/content/i-fb.png" alt="" /></li>
+							</ul>
+							</li>
+						</ul>
+						<span class="copyright smalltext">Copyright &copy; 2010 Genesis<br />
+						All rights reserved.</span> 
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Genesis</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<link href="css/nivo-slider.css" rel="stylesheet"  type="text/css" media="screen" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	
+	/* if javascript disabled */
+	$("body").removeClass("nojs").addClass("js");
+
+});
+
+</script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+/* homepage slideshow */
+$(window).load(function() {
+	$('#slider-small').nivoSlider({
+		effect:'random', //Specify sets like: 'fold,fade,sliceDown'
+		slices:15,
+		animSpeed:500, //Slide transition speed
+		pauseTime:3000,
+		directionNav:false, //Next &amp; Prev
+		startSlide:0 //Set starting Slide (0 index)
+	});
+});
+</script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body class="nojs">
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+						<h1><a href="index.html">Genesis</a></h1>
+					</div><!-- end #logo -->
+				</div><!-- end #topleft -->
+				<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li class="current"><a href="#">Features</a>
+								<ul>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="tab.html">jQuery Tab</a></li>
+									<li><a href="styling.html">HTML Styling</a></li>
+									<li><a href="column.html">Column Layouts</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a>
+								<ul>
+									<li><a href="default.html">Default</a></li>
+									<li><a href="fullwidth.html">Full Width</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+									<li><a href="single.html">Blog Details</a></li>
+									<li><a href="table.html">Table Layout</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Portfolio</a>
+								<ul>
+									<li><a href="portfolio4.html">Portfolio Default</a></li>
+									<li><a href="portfolio.html">Portfolio One Column</a></li>
+									<li><a href="portfolio2.html">Portfolio Two Column</a></li>
+									<li><a href="portfolio3.html">Portfolio Three Column</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+			<div id="main">
+				<div id="content">
+					<div id="breadcrumb"><a href="#">Home</a> &raquo; <a href="#">Slider</a></div>
+					
+					<h1 class="pagetitle">Testimonials Slider</h1>
+					<div class="ts-thinkboxslider">
+						<div id="ts-thinkboxslider-cont">
+							<div class="ts-thinkboxslider-quotecontainer" id="ts-thinkboxslider-quotecontainer">
+								<div class="ts-thinkboxslider-quotecontent">
+									<div class="ts-thinkboxslider-textinfo"><span class="ts-thinkboxslider-name">Jane Doe</span></div>
+									<p class="ts-thinkboxslider-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare, mauris id tempor molestie, leo massa ornare risus, ac adipiscing sem ipsum in magna. Fusce ac quam mi. Suspendisse porttitor euismod odio nec pellentesque. Vivamus at nisl ligula, at blandit tortor. Aenean ac est sit amet lacus sollicitudin lacinia sit amet sed diam. Donec turpis enim, ornare in laoreet nec.</p>
+									
+								</div>
+								 <div class="ts-thinkboxslider-quotecontent">
+									<div class="ts-thinkboxslider-textinfo"><span class="ts-thinkboxslider-name">Victoria Doe</span></div>
+									<p class="ts-thinkboxslider-quote">Morbi odio lacus, sagittis sit amet sodales ut, volutpat at risus. Morbi dapibus tristique metus, egestas sagittis lorem mattis eu. Integer augue diam, porta at semper ut, sodales et tellus. Aliquam a lorem mauris, ac fringilla libero. In hac habitasse platea dictumst. In hac habitasse platea dictumst.</p>
+									
+								</div>
+								<div class="ts-thinkboxslider-quotecontent">
+									<div class="ts-thinkboxslider-textinfo"><span class="ts-thinkboxslider-name">John Doe</span></div>
+									<p class="ts-thinkboxslider-quote">Nunc tristique orci non neque blandit et venenatis eros porttitor. Cras at congue nibh. Mauris varius sagittis ultricies. Mauris luctus urna orci. Nunc in diam nulla, eu porta mauris. Cras feugiat ante at dui sagittis in aliquam urna pretium. Vivamus accumsan congue consequat. Cras sit amet diam ante. Phasellus sed arcu urna. </p>		
+									
+								</div>
+								 <div class="ts-thinkboxslider-quotecontent">
+									<div class="ts-thinkboxslider-textinfo"><span class="ts-thinkboxslider-name">Farah Queen</span></div>
+									<p class="ts-thinkboxslider-quote">Aenean a hendrerit risus. Sed egestas egestas dui vitae elementum. Aliquam eget iaculis neque. Donec egestas rutrum mauris quis eleifend. Curabitur quis commodo justo. Morbi sed ante non quam dapibus interdum. Morbi sit amet felis turpis. Duis at metus sit amet ligula faucibus ornare euismod id risus. Donec in magna a diam vestibulum hendrerit.</p>		
+									
+								</div>
+								<div class="ts-thinkboxslider-quotecontent">
+									<div class="ts-thinkboxslider-textinfo"><span class="ts-thinkboxslider-name">Ericka Doe</span></div>
+									<p class="ts-thinkboxslider-quote">Cras elementum, purus id convallis convallis, dui libero mollis odio, sit amet interdum magna enim nec turpis. Praesent id libero in tortor rhoncus convallis sit amet vel lacus. Phasellus bibendum ultricies nisl et euismod.</p>
+									
+								</div>
+							</div>
+							<div class="ts-thinkboxslider-pointer">
+							</div>  
+						</div>
+						<div class="ts-thinkboxslider-thumbcont">
+							<a href="#" id="thumbslide-1" title="0" class="ts-thinkboxslider-thumbslide"><img src="images/content/pic1.jpg" alt="" width="60" height="60" /></a>
+							<a href="#" id="thumbslide-2" title="1" class="ts-thinkboxslider-thumbslide"><img src="images/content/pic2.jpg" alt="" width="60" height="60" /></a>
+							<a href="#" id="thumbslide-3" title="2" class="ts-thinkboxslider-thumbslide"><img src="images/content/pic3.jpg" alt="" width="60" height="60" /></a>
+							<a href="#" id="thumbslide-4" title="3" class="ts-thinkboxslider-thumbslide"><img src="images/content/pic4.jpg" alt="" width="60" height="60" /></a>
+							<a href="#" id="thumbslide-5" title="4" class="ts-thinkboxslider-thumbslide"><img src="images/content/pic5.jpg" alt="" width="60" height="60" /></a>
+						</div>
+						<div class="ts-thinkbox-clear"></div>
+					</div>
+					<br />
+					<br />
+					<h1 class="pagetitle">Image Slider</h1>
+					<div id="slider-container">
+						<div id="slider-small">
+							<img src="images/slide1-small.jpg" alt=""/>
+							<img src="images/slide2-small.jpg" alt=""/>
+							<img src="images/slide3-small.jpg" alt=""/>
+					   </div>
+					   <div id="frame-slider-small"></div>
+					</div><!-- end #slide-container -->
+					
+				</div><!-- end #content -->
+				<div id="sideright">
+					<div class="gradient-side-top"></div>
+					<div id="sidebar">
+						<ul>
+							<li class="widget-container">
+								<h2 class="widget-title">About Us</h2>
+								<ul>
+									<li><a href="#">Company Profile</a></li>
+									<li><a href="#">Our Mission &amp; Vision</a></li>
+
+									<li><a href="#">Our Team</a></li>
+									<li><a href="#">Our Patners</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- end #sidebar -->
+					<div class="gradient-side-bottom"></div>
+				</div><!-- end #sideright -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #main -->
+		</div><!-- end #center-container-top -->
+	
+	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Get In touch</h2>
+						<h2 class="uppercase">Genesis</h2>
+						<p>
+						Modern Land, 20<br />
+						45551 City, Country<br />
+						Phone: 123 4567 8999<br />
+						Fax: 123 4567 8998
+						</p>
+						<a href="contact.html" class="button2">Contact Form</a>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Post</h2>
+						<ul>
+							<li><a href="#">Proin consequat nunc at eros</a></li>
+							<li><a href="#">Maecenas sagittis metus</a></li>
+							<li><a href="#">Curabitur facilisis venenatis</a></li>
+							<li><a href="#">Ut sed tortor vel erat</a></li>
+							<li><a href="#">Nam non sem vitae erat</a></li>
+							<li><a href="#">Nulla vulputate velit massa</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Recent Works</h2>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec aliquam ipsum risus</a></li>
+							<li><a href="#">Ut euismod nulla</a></li>
+							<li><a href="#">Sed ac metus a urna convallis</a></li>
+							<li><a href="#">Cursus eget vitae purus</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth">
+				<ul>
+					<li class="widget-container">
+						<h2 class="widget-title">Categories</h2>
+						<ul>
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Oscomm</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="one_fifth last">
+				<ul>
+					<li class="widget-container" id="widget-search">
+						<h2 class="widget-title">Search</h2>
+						<ul>
+							<li>
+							<form  method="get" action="" id="searchform">
+							<div><input type="text" class="inputbox" value="Search Here" onblur="if (this.value == ''){this.value = 'Search Here'; }" onfocus="if (this.value == 'Search Here') {this.value = ''; }"/></div>
+							</form><br />
+							<ul id="social">
+								<li><img src="images/content/i-flickr.png" alt="" /></li>
+								<li><img src="images/content/i-feed.png" alt="" /></li>
+								<li><img src="images/content/i-twitter.png" alt="" /></li>
+								<li><img src="images/content/i-fb.png" alt="" /></li>
+							</ul>
+							</li>
+						</ul>
+						<span class="copyright smalltext">Copyright &copy; 2010 Genesis<br />
+						All rights reserved.</span> 
+					</li>
+				</ul>
+				</div><!-- end .one_fifth -->
+				<div class="clear"></div><!-- end clear float -->
+			</div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>

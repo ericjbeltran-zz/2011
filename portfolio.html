@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Eric Beltran</title>
+<link rel="shortcut icon" href="images/content/favicon.ico" />
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<link href="css/prettyPhoto.css" rel="stylesheet"  type="text/css" media="screen" title="prettyPhoto main stylesheet" />
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('h6');
+	 
+</script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.imgr.min.js"></script>
+<script src="js/fade.js" type="text/javascript"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+	$(document).ready(function(){
+	
+	/* Function for lavalamp navigation menu and dropdown */	
+	$("#menu").lavaLamp({
+		fx: "backout",
+		speed: 700
+	});
+	
+	$(" #menu ul ").css({display: "none"}); // Opera Fix
+	$(" #menu li").hover(function(){
+	$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	
+	/* Portfolio Gallery */
+	$("a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'facebook',slideshow:2000});
+	$("img.rounded").imgr({radius:"10px"});
+
+});
+
+</script>
+<script src="js/filter.js" type="text/javascript"></script>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="js/DD_roundies_0.0.2a-min.js"></script>
+<script type="text/javascript" src="js/ie_rounded_config.js"></script>
+<![endif]-->
+</head>
+<body>
+
+	<div id="outer-container-top-inner">
+	<div id="outer-container-bgtoppattern-inner">
+	
+		<div id="center-container-top">
+			<div id="top">
+				<div id="topleft">
+					<div id="logo">
+                    	<h1><a href="index.html">ericbeltran.com</a></h1>
+   				  </div><!-- end #logo -->
+				</div><!-- end #topleft -->
+    			<div id="topright">
+					<div id="top-navigation">
+						  <ul class="lavaLamp" id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li class="current"><a class="active" href="portfolio.html">Portfolio</a>
+								<ul>
+									<li><a href="portfolio.html#printmedia">Print Design</a></li>
+									<li><a href="portfolio.html#interactivemedia">Interactive Media</a></li>
+									<li><a href="portfolio.html#videoproduction">Video Production</a></li>
+								</ul>
+							</li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						  </ul>
+					     <div class="clear"></div><!-- clear float -->
+					</div>
+					<!-- end #top-navigation -->
+				</div><!-- end #topright -->
+			</div><!-- end #top -->
+
+			<div id="main">
+				<h1 class="pagetitle">Portfolio</h1>
+				<div id="ts-display-portfolio">
+				
+					<ul id="filter">
+						<li class="current"><a href="#">All</a></li>
+						<li><a href="#">Graphic Design</a></li>
+						<li><a href="#">Interactive Media</a></li>
+						<li><a href="#">Video Production</a></li>
+					</ul>
+					
+					<ul id="ts-display-pf-col-4">
+                    	<!--module-->
+                        <li  class="graphic-design">
+                        <div class="ts-display-pf-img">
+                        <a class="image" href="portfolio/graphicdesign/aventalearning/aventa_mediakit.jpg" rel="prettyPhoto[aventa]" >
+                        <span class="rollover"></span>
+                        <img src="portfolio/graphicdesign/aventalearning/aventa_tn.jpg" alt="" width="220" height="150" class="rounded"/>
+                        </a>
+                        </div>
+                        <div class="ts-display-pf-text">
+                        <span class="pf-title">Aventa Learning Media Kit</span>
+                        <p>Assisted with media kit development for online high school.</p>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                        </li>
+                        
+                        <!--module-->
+                        <li  class="graphic-design">
+                        <div class="ts-display-pf-img">
+                        <a class="image" href="portfolio/graphicdesign/pup/pup_coupons.png" rel="prettyPhoto[pup]" >
+                        <span class="rollover"></span>
+                        <img src="portfolio/graphicdesign/pup/pup_tn.jpg" alt="" width="220" height="150"  class="rounded"/>
+                        <a class="image" href="portfolio/graphicdesign/pup/pup_magazine.jpg" rel="prettyPhoto[pup]" >
+                        <a class="image" href="portfolio/graphicdesign/pup/pup_mediakit.jpg" rel="prettyPhoto[pup]" >
+                        </a>
+                        </div>
+                        <div class="ts-display-pf-text">
+                        <span class="pf-title">Portland Urban Pages Magazine</span>
+                        <p>Coupons, cover, and 2008 media kit design samples.</p>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                        </li>
+                        
+                        <!--module-->
+                        <li class="graphic-design">
+                        <div class="ts-display-pf-img">
+                        <a class="image" href="portfolio/graphicdesign/zot/zot_cityguide.jpg" rel="prettyPhoto[zot]" >
+                        <span class="rollover"></span>
+                        <img src="portfolio/graphicdesign/zot/zot_tn.jpg" alt=""  class="rounded"/>
+                        </a>
+                        </div>
+                        <div class="ts-display-pf-text">
+                        <span class="pf-title">ZOT City Guide</span>
+                        <p>Designed cover and logo for tourist city guide fold out.</p>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                        </li>
+                        
+                        <!--module-->
+                        <li class="nomargin graphic-design">
+                        <div class="ts-display-pf-img">
+                        <a class="image" href="portfolio/graphicdesign/zotta/zotta_bc.jpg" rel="prettyPhoto[zotta]" >
+                        <span class="rollover"></span>
+                        <img src="portfolio/graphicdesign/zotta/zotta_tn.jpg" alt=""  class="rounded"/></a>
+                        </div>
+                        <div class="ts-display-pf-text">
+                        <span class="pf-title">ZOTTA</span>
+                        <p>Business card template designed for marketing company.</p>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                        </li>
+                        
+                        <!--module-->
+                        <li class="interactive-media">
+                        <div class="ts-display-pf-img">
+                        <a class="image" href="portfolio/interactivemedia/interactivemedia_1.jpg" rel="prettyPhoto[im]" >
+                        <span class="rollover"></span>
+                        <img src="portfolio/interactivemedia/interactivemedia_tn.jpg" alt="" class="rounded"/>
+                        <a class="image" href="portfolio/interactivemedia/interactivemedia_2.jpg" rel="prettyPhoto[im]" >
+                        <a class="image" href="portfolio/interactivemedia/interactivemedia_3.jpg" rel="prettyPhoto[im]" >
+                        <a class="image" href="portfolio/interactivemedia/interactivemedia_4.jpg" rel="prettyPhoto[im]" >
+                        </a>
+                        </div>
+                        <div class="ts-display-pf-text">
+                        <span class="pf-title">KC Distance Learning</span>
+                        <p>Flash based interactives used in online curriculum.</p>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                        </li>
+                        
+                        <!--module-->
+                        <li class="video-production">
+                        <div class="ts-display-pf-img">
+                        <a href="http://www.youtube.com/watch?v=fZW_EWBEe84" rel="prettyPhoto" >
+                        <span class="rollover"></span>
+                        <img src="portfolio/videoproduction/videoproduction_tn.jpg" alt=""  class="rounded"/>
+                        </a>
+                        </div>
+                        <div class="ts-display-pf-text">
+                        <span class="pf-title">Drive Less Save More</span>
+                        <p>Online Commercial for 'Drive Less Save More' campaign.</p>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                        </li>
+				  </ul>
+				<div class="clear"></div>
+		    </div><!-- end #ts-display-portfolio -->
+			<div class="clear"></div>
+		</div><!-- end #main -->
+	</div><!-- end #center-container-top -->	
+	</div><!-- end #outer-container-bgtoppattern-inner -->
+	</div><!-- end #outer-container-top-inner -->
+	
+	<div id="outer-container-bottom">
+	<div id="outer-container-bgbottompattern">
+	
+		<div id="center-container-bottom">
+			<div id="footer">
+			<div class="one_fifth">
+			<span class="copyright smalltext" style="text-align:left;">
+            Copyright &copy; 2011 ericbeltran.com<br />
+            http://www.ericbeltran.com<br />
+            eric@ericbeltran.com<br />
+            503.395.8067</span>
+			</div><!-- end .one_fifth -->
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+			<div class="one_fifth">&nbsp;</div>
+            </form>
+            </div><!-- end .one_fifth -->
+
+            </div><!-- end #footer -->
+		</div><!-- end #center-container-bottom -->
+
+	</div><!-- end #outer-container-bgbottompattern -->
+	</div><!-- end #outer-container-top -->
+		
+</body>
+</html>
